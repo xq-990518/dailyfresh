@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from django.http import request
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from goods.models import GoodsType, IndexGoodsBanner, IndexPromotionBanner, IndexTypeGoodsBanner, GoodsSKU
@@ -10,6 +11,7 @@ from django.core.cache import cache
 from django_redis import get_redis_connection
 from order.models import OrderGoods
 from django.core.paginator import Paginator
+from haystack.views import SearchView
 
 
 # Create your views here.
@@ -225,3 +227,26 @@ class GoodsListView(ListView):
         }
 
         return render(request, 'goods/list.html', context)
+
+
+class MySeachView(SearchView):
+    '''全文搜索框架增加更多变量'''
+
+    def extra_context(self):  # 重载extra_context来添加额外的context内容
+        context = super(MySeachView, self).extra_context()
+
+        # 获取商品的分类信息
+        types = GoodsType.objects.all()
+
+        # 获取用户购物车中商品的数目
+        user = self.request.user
+        cart_count = 0
+        if user.is_authenticated:
+        #     用户已登录
+            conn = get_redis_connection('default')
+            cart_key = 'cart_%d' % user.id
+            cart_count = conn.hlen(cart_key)
+
+        context['types'] = types
+        context['cart_count']=cart_count
+        return context
