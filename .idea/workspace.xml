@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/apps/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dailyfresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dailyfresh/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/goods/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/goods/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_1.toc" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VyDDYAaESGGIM4raw7knpHmZqK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/cart" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/cart" />
+      <recent name="$PROJECT_DIR$/templates/search" />
+      <recent name="$PROJECT_DIR$/templates/goods" />
+      <recent name="$PROJECT_DIR$/templates/base" />
+      <recent name="$PROJECT_DIR$/utils/fdfs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/goods" />
+      <recent name="$PROJECT_DIR$/templates/user" />
+      <recent name="$PROJECT_DIR$/templates/base" />
+      <recent name="$PROJECT_DIR$/apps" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dailyfresh" type="Python.DjangoServer" factoryName="Django server">
+      <module name="dailyfresh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="dailyfresh.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="" />
+      <created>1578216321582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578216321582</updated>
+      <workItem from="1578216325549" duration="11581000" />
+      <workItem from="1578404790320" duration="878000" />
+      <workItem from="1578405839151" duration="5702000" />
+      <workItem from="1578455358313" duration="228000" />
+      <workItem from="1578739339663" duration="6809000" />
+      <workItem from="1578813473308" duration="15893000" />
+      <workItem from="1578913061426" duration="3692000" />
+      <workItem from="1579003996751" duration="6217000" />
+      <workItem from="1579076985486" duration="3945000" />
+      <workItem from="1579090184387" duration="1834000" />
+      <workItem from="1579243264428" duration="12568000" />
+      <workItem from="1583805089048" duration="184000" />
+      <workItem from="1583805434693" duration="59000" />
+      <workItem from="1583805668005" duration="76000" />
+      <workItem from="1583805791354" duration="108000" />
+      <workItem from="1583822887004" duration="86940000" />
+    </task>
+    <task id="LOCAL-00001" summary="新增.idea隐藏文件">
+      <created>1585718943137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585718943137</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增商品全文搜索框架,增加更多变量">
+      <created>1585731327939</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585731327939</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增.idea隐藏文件" />
+    <MESSAGE value="新增商品全文搜索框架,增加更多变量" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增商品全文搜索框架,增加更多变量" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="88" y="27" width="800" height="600" key="#Inspections" timestamp="1578913397863">
+      <screen x="0" y="27" width="987" height="600" />
+    </state>
+    <state x="88" y="27" width="800" height="600" key="#Inspections/0.27.987.600@0.27.987.600" timestamp="1578913397863" />
+    <state x="170" y="41" width="800" height="684" key="#Notifications" timestamp="1585731361303">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="170" y="41" width="800" height="684" key="#Notifications/0.27.1151.706@0.27.1151.706" timestamp="1585731361303" />
+    <state x="237" y="88" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583805837856">
+      <screen x="0" y="27" width="1285" height="800" />
+    </state>
+    <state x="237" y="88" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805837856" />
+    <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585717202749">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
+    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2" timestamp="1585731327369">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585731327369" />
+    <state x="593" y="146" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584068617098">
+      <screen x="0" y="27" width="1920" height="987" />
+    </state>
+    <state x="349" y="103" key="FileChooserDialogImpl/0.27.1130.633@0.27.1130.633" timestamp="1578224037192" />
+    <state x="350" y="103" width="424" height="491" key="FileChooserDialogImpl/0.27.1134.637@0.27.1134.637" timestamp="1578222767983" />
+    <state x="593" y="146" key="FileChooserDialogImpl/0.27.1920.987@0.27.1920.987" timestamp="1584068617098" />
+    <state width="1006" height="182" key="GridCell.Tab.0.bottom" timestamp="1583833607641">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.0.bottom/0.27.1060.670@0.27.1060.670" timestamp="1583833607641" />
+    <state width="1156" height="215" key="GridCell.Tab.0.bottom/0.27.1210.751@0.27.1210.751" timestamp="1579081283745" />
+    <state width="1866" height="309" key="GridCell.Tab.0.bottom/0.27.1920.987@0.27.1920.987" timestamp="1583830324405" />
+    <state width="933" height="367" key="GridCell.Tab.0.bottom/0.27.987.600@0.27.987.600" timestamp="1578919556771" />
+    <state width="1006" height="182" key="GridCell.Tab.0.center" timestamp="1583833607641">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.0.center/0.27.1060.670@0.27.1060.670" timestamp="1583833607641" />
+    <state width="1156" height="215" key="GridCell.Tab.0.center/0.27.1210.751@0.27.1210.751" timestamp="1579081283745" />
+    <state width="1866" height="309" key="GridCell.Tab.0.center/0.27.1920.987@0.27.1920.987" timestamp="1583830324405" />
+    <state width="933" height="367" key="GridCell.Tab.0.center/0.27.987.600@0.27.987.600" timestamp="1578919556770" />
+    <state width="1006" height="182" key="GridCell.Tab.0.left" timestamp="1583833607640">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.0.left/0.27.1060.670@0.27.1060.670" timestamp="1583833607640" />
+    <state width="1156" height="215" key="GridCell.Tab.0.left/0.27.1210.751@0.27.1210.751" timestamp="1579081283744" />
+    <state width="1866" height="309" key="GridCell.Tab.0.left/0.27.1920.987@0.27.1920.987" timestamp="1583830324404" />
+    <state width="933" height="367" key="GridCell.Tab.0.left/0.27.987.600@0.27.987.600" timestamp="1578919556770" />
+    <state width="1006" height="182" key="GridCell.Tab.0.right" timestamp="1583833607641">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.0.right/0.27.1060.670@0.27.1060.670" timestamp="1583833607641" />
+    <state width="1156" height="215" key="GridCell.Tab.0.right/0.27.1210.751@0.27.1210.751" timestamp="1579081283745" />
+    <state width="1866" height="309" key="GridCell.Tab.0.right/0.27.1920.987@0.27.1920.987" timestamp="1583830324405" />
+    <state width="933" height="367" key="GridCell.Tab.0.right/0.27.987.600@0.27.987.600" timestamp="1578919556771" />
+    <state width="1006" height="182" key="GridCell.Tab.1.bottom" timestamp="1583833607644">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.1.bottom/0.27.1060.670@0.27.1060.670" timestamp="1583833607644" />
+    <state width="1156" height="215" key="GridCell.Tab.1.bottom/0.27.1210.751@0.27.1210.751" timestamp="1579081283749" />
+    <state width="1866" height="309" key="GridCell.Tab.1.bottom/0.27.1920.987@0.27.1920.987" timestamp="1583830324406" />
+    <state width="1006" height="182" key="GridCell.Tab.1.center" timestamp="1583833607642">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.1.center/0.27.1060.670@0.27.1060.670" timestamp="1583833607642" />
+    <state width="1156" height="215" key="GridCell.Tab.1.center/0.27.1210.751@0.27.1210.751" timestamp="1579081283746" />
+    <state width="1866" height="309" key="GridCell.Tab.1.center/0.27.1920.987@0.27.1920.987" timestamp="1583830324406" />
+    <state width="1006" height="182" key="GridCell.Tab.1.left" timestamp="1583833607642">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.1.left/0.27.1060.670@0.27.1060.670" timestamp="1583833607642" />
+    <state width="1156" height="215" key="GridCell.Tab.1.left/0.27.1210.751@0.27.1210.751" timestamp="1579081283745" />
+    <state width="1866" height="309" key="GridCell.Tab.1.left/0.27.1920.987@0.27.1920.987" timestamp="1583830324405" />
+    <state width="1006" height="182" key="GridCell.Tab.1.right" timestamp="1583833607644">
+      <screen x="0" y="27" width="1060" height="670" />
+    </state>
+    <state width="1006" height="182" key="GridCell.Tab.1.right/0.27.1060.670@0.27.1060.670" timestamp="1583833607644" />
+    <state width="1156" height="215" key="GridCell.Tab.1.right/0.27.1210.751@0.27.1210.751" timestamp="1579081283748" />
+    <state width="1866" height="309" key="GridCell.Tab.1.right/0.27.1920.987@0.27.1920.987" timestamp="1583830324406" />
+    <state x="359" y="88" width="422" height="591" key="RollbackChangesDialog" timestamp="1585735800688">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="359" y="88" width="422" height="591" key="RollbackChangesDialog/0.27.1151.706@0.27.1151.706" timestamp="1585735800688" />
+    <state x="112" y="27" width="1027" height="706" key="SettingsEditor" timestamp="1585741269896">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="103" y="27" width="900" height="670" key="SettingsEditor/0.27.1060.670@0.27.1060.670" timestamp="1583839457041" />
+    <state x="103" y="27" width="900" height="674" key="SettingsEditor/0.27.1064.674@0.27.1064.674" timestamp="1583823012292" />
+    <state x="112" y="27" width="1027" height="706" key="SettingsEditor/0.27.1151.706@0.27.1151.706" timestamp="1585741269896" />
+    <state x="124" y="62" width="1037" height="737" key="SettingsEditor/0.27.1285.800@0.27.1285.800" timestamp="1583805898964" />
+    <state x="186" y="27" width="1274" height="807" key="SettingsEditor/0.27.1918.807@0.27.1918.807" timestamp="1583823111792" />
+    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1585738267170">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585738267170" />
+    <state x="282" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1583822889559">
+      <screen x="0" y="27" width="1064" height="674" />
+    </state>
+    <state x="270" y="165" key="com.intellij.ide.util.TipDialog/0.27.1021.652@0.27.1021.652" timestamp="1579004000505" />
+    <state x="272" y="164" key="com.intellij.ide.util.TipDialog/0.27.1029.639@0.27.1029.639" timestamp="1579243280314" />
+    <state x="320" y="157" key="com.intellij.ide.util.TipDialog/0.27.1064.616@0.27.1064.616" timestamp="1578739338814" />
+    <state x="282" y="172" key="com.intellij.ide.util.TipDialog/0.27.1064.674@0.27.1064.674" timestamp="1583822889559" />
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805668201" />
+    <state x="508" y="239" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1579090187599" />
+    <state x="249" y="159" key="com.intellij.ide.util.TipDialog/0.27.940.624@0.27.940.624" timestamp="1578813478984" />
+    <state x="146" y="156" key="com.intellij.ide.util.TipDialog/0.27.983.604@0.27.983.604" timestamp="1578404873312" />
+    <state x="261" y="154" key="com.intellij.ide.util.TipDialog/0.27.987.600@0.27.987.600" timestamp="1578913061089" />
+    <state x="409" y="27" width="700" height="706" key="find.popup" timestamp="1585743723982">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="409" y="27" width="700" height="706" key="find.popup/0.27.1151.706@0.27.1151.706" timestamp="1585743723982" />
+    <state x="0" y="27" width="700" height="682" key="find.popup/0.27.1221.682@0.27.1221.682" timestamp="1580125853827" />
+    <state x="683" y="27" width="1101" height="987" key="find.popup/0.27.1920.987@0.27.1920.987" timestamp="1583829848202" />
+    <state x="236" y="160" width="668" height="453" key="git4idea.merge.GitPullDialog" timestamp="1585723924818">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="236" y="160" width="668" height="453" key="git4idea.merge.GitPullDialog/0.27.1151.706@0.27.1151.706" timestamp="1585723924818" />
+    <state x="220" y="26" width="709" height="761" key="search.everywhere.popup" timestamp="1585712656254">
+      <screen x="0" y="27" width="1151" height="706" />
+    </state>
+    <state x="209" y="26" width="672" height="678" key="search.everywhere.popup/0.27.1093.630@0.27.1093.630" timestamp="1578413685575" />
+    <state x="220" y="26" width="709" height="761" key="search.everywhere.popup/0.27.1151.706@0.27.1151.706" timestamp="1585712656254" />
+    <state x="233" y="26" width="749" height="730" key="search.everywhere.popup/0.27.1217.678@0.27.1217.678" timestamp="1580125915671" />
+  </component>
+</project>

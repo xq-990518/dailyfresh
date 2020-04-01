@@ -189,6 +189,7 @@ CUSTOM_STORAGE_OPTIONS = {
     'CLIENT_CONF': './utils/fdfs/client.conf',
     # nginx服务器IP地址及端口号
     'BASE_URL': SERVER_IP + ':8888/',
+    # 'BASE_URL': 'http://305393ri91.qicp.vip:44302/',
 }
 
 # 全文检索框架配置
