@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dailyfresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dailyfresh/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/goods/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/goods/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_1.toc" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/command/celery.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/command/fdfs_storage.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/command/fdfs_tracker.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/command/nginx.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/command/redis.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/command/temp.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,22 +68,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/cart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/command" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/cart" />
-      <recent name="$PROJECT_DIR$/templates/search" />
-      <recent name="$PROJECT_DIR$/templates/goods" />
-      <recent name="$PROJECT_DIR$/templates/base" />
-      <recent name="$PROJECT_DIR$/utils/fdfs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/goods" />
       <recent name="$PROJECT_DIR$/templates/user" />
       <recent name="$PROJECT_DIR$/templates/base" />
       <recent name="$PROJECT_DIR$/apps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/command" />
+      <recent name="$PROJECT_DIR$/doc/run" />
+      <recent name="$PROJECT_DIR$/templates/cart" />
+      <recent name="$PROJECT_DIR$/templates/search" />
+      <recent name="$PROJECT_DIR$/templates/goods" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,7 +149,8 @@
       <workItem from="1583805434693" duration="59000" />
       <workItem from="1583805668005" duration="76000" />
       <workItem from="1583805791354" duration="108000" />
-      <workItem from="1583822887004" duration="86940000" />
+      <workItem from="1583822887004" duration="87299000" />
+      <workItem from="1585797872802" duration="525000" />
     </task>
     <task id="LOCAL-00001" summary="新增.idea隐藏文件">
       <created>1585718943137</created>
@@ -163,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585731327939</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加购物车记录,显示购物车">
+      <created>1585746691697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585746691697</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增.idea隐藏文件" />
     <MESSAGE value="新增商品全文搜索框架,增加更多变量" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增商品全文搜索框架,增加更多变量" />
+    <MESSAGE value="添加购物车记录,显示购物车" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加购物车记录,显示购物车" />
   </component>
   <component name="WindowStateProjectService">
     <state x="88" y="27" width="800" height="600" key="#Inspections" timestamp="1578913397863">
@@ -191,10 +202,10 @@
       <screen x="0" y="27" width="1151" height="706" />
     </state>
     <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
-    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2" timestamp="1585731327369">
+    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2" timestamp="1585746691260">
       <screen x="0" y="27" width="1151" height="706" />
     </state>
-    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585731327369" />
+    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585746691260" />
     <state x="593" y="146" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584068617098">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
@@ -265,17 +276,18 @@
     <state x="112" y="27" width="1027" height="706" key="SettingsEditor/0.27.1151.706@0.27.1151.706" timestamp="1585741269896" />
     <state x="124" y="62" width="1037" height="737" key="SettingsEditor/0.27.1285.800@0.27.1285.800" timestamp="1583805898964" />
     <state x="186" y="27" width="1274" height="807" key="SettingsEditor/0.27.1918.807@0.27.1918.807" timestamp="1583823111792" />
-    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1585738267170">
+    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1585746702925">
       <screen x="0" y="27" width="1151" height="706" />
     </state>
-    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585738267170" />
-    <state x="282" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1583822889559">
-      <screen x="0" y="27" width="1064" height="674" />
+    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585746702925" />
+    <state x="292" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1585797878975">
+      <screen x="0" y="27" width="1100" height="668" />
     </state>
     <state x="270" y="165" key="com.intellij.ide.util.TipDialog/0.27.1021.652@0.27.1021.652" timestamp="1579004000505" />
     <state x="272" y="164" key="com.intellij.ide.util.TipDialog/0.27.1029.639@0.27.1029.639" timestamp="1579243280314" />
     <state x="320" y="157" key="com.intellij.ide.util.TipDialog/0.27.1064.616@0.27.1064.616" timestamp="1578739338814" />
     <state x="282" y="172" key="com.intellij.ide.util.TipDialog/0.27.1064.674@0.27.1064.674" timestamp="1583822889559" />
+    <state x="292" y="171" key="com.intellij.ide.util.TipDialog/0.27.1100.668@0.27.1100.668" timestamp="1585797878975" />
     <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805668201" />
     <state x="508" y="239" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1579090187599" />
     <state x="249" y="159" key="com.intellij.ide.util.TipDialog/0.27.940.624@0.27.940.624" timestamp="1578813478984" />
