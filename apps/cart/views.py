@@ -11,15 +11,15 @@ from utils.mixin import LoginRequiredMixin
 class CartAddView(ListView):
     '''购物车记录添加'''
 
-    def post(self, requst):
+    def post(self, request):
         '''购物车记录添加'''
         # 接收数据
-        user = requst.user
+        user = request.user
         if not user.is_authenticated:
             # 用户未登陆
             return JsonResponse({'res': 0, 'errmsg': '请先登录'})
-        sku_id = requst.POST.get('sku_id')
-        count = requst.POST.get('count')
+        sku_id = request.POST.get('sku_id')
+        count = request.POST.get('count')
         # 数据校验
         if not all([sku_id, count]):
             return JsonResponse({'res': 1, 'errmsg': '数据不完整'})
@@ -96,4 +96,109 @@ class CartInfoView(LoginRequiredMixin, ListView):
             'skus': skus
         }
 
-        return render(request, 'cart/cart.html',context)
+        return render(request, 'cart/cart.html', context)
+
+
+# 更新购物车记录
+# 采用ajax请求:post
+# 前端需要传递的参数:商品id(sku_id),更新的商品数量(count)
+# /cart/update/
+class CartUpdateView(ListView):
+    '''购物车记录更新'''
+
+    def post(self, request):
+        '''购物车记录更新'''
+
+        # 获取登录用户
+        user = request.user
+        if not user.is_authenticated:
+            # 用户未登陆
+            return JsonResponse({'res': 0, 'errmsg': '请先登录'})
+        sku_id = request.POST.get('sku_id')
+        count = request.POST.get('count')
+
+        # 数据校验
+        if not all([sku_id, count]):
+            return JsonResponse({'res': 1, 'errmsg': '数据不完整'})
+            # return JsonResponse({'code': 400, 'msg': '数据不完整', 'data': [], 'success': False})
+
+        # 校验添加的商品数量
+        try:
+            count = int(count)
+        except Exception as e:
+            # 数目出错
+            return JsonResponse({'res': 2, 'errmsg': '商品数目出错'})
+            # return JsonResponse({'code': 400, 'msg': '商品数目出错', 'data': [], 'success': False})
+
+        # 校验商品是否存在
+        try:
+            sku = GoodsSKU.objects.get(id=sku_id)
+        except GoodsSKU.DoesNotExist:
+            # 商品不存在
+            return JsonResponse({'res': 3, 'errmsg': '商品不存在'})
+            # return JsonResponse({'code': 500, 'msg': '商品不存在', 'data': [], 'success': False})
+
+        # 业务处理:更新购物车记录
+        conn = get_redis_connection('default')
+        cart_key = 'cart_%d' % user.id
+
+        if count > sku.stock:
+            # 库存不足
+            return JsonResponse({'res': 4, 'errmsg': '商品库存不足'})
+        # 设置hash中sku_id对应的值
+        # hset -> 如果sku_id已经存在,更新数据,如果sku_id不存在,添加数据
+        conn.hset(cart_key, sku_id, count)
+
+        # 计算用户购物车中商品的总件数
+        total_count = 0
+        vals = conn.hvals(cart_key)
+        for val in vals:
+            total_count += int(val)
+        # 返回应答
+        return JsonResponse({'res': 5, 'total_count': total_count, 'message': '修改成功'})
+
+
+# 删除购物车记录
+# 采用ajax请求:post
+# 前端需要传递的参数:商品id(sku_id)
+# /cart/delete/
+class CartDeleteView(ListView):
+    '''购物车记录删除'''
+
+    def post(self, request):
+        '''购物车记录删除'''
+        print("enter")
+        # 获取登录用户
+        user = request.user
+        if not user.is_authenticated:
+            # 用户未登陆
+            return JsonResponse({'res': 0, 'errmsg': '请先登录'})
+        sku_id = request.POST.get('sku_id')
+
+        # 数据校验
+        if not sku_id:
+            return JsonResponse({'res': 1, 'errmsg': '数据不完整(无效的商品id)'})
+            # return JsonResponse({'code': 400, 'msg': '数据不完整', 'data': [], 'success': False})
+
+        # 校验商品是否存在
+        try:
+            sku = GoodsSKU.objects.get(id=sku_id)
+        except GoodsSKU.DoesNotExist:
+            # 商品不存在
+            return JsonResponse({'res': 2, 'errmsg': '商品不存在'})
+            # return JsonResponse({'code': 500, 'msg': '商品不存在', 'data': [], 'success': False})
+
+        # 业务处理:删除购物车记录
+        conn = get_redis_connection('default')
+        cart_key = 'cart_%d' % user.id
+
+        conn.hdel(cart_key, sku_id)
+
+        # 计算用户购物车中商品的总件数
+        total_count = 0
+        vals = conn.hvals(cart_key)
+        for val in vals:
+            total_count += int(val)
+
+        # 返回应答
+        return JsonResponse({'res': 3, 'total_count': total_count, 'message': '删除成功'})
