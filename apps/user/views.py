@@ -246,6 +246,10 @@ class UserInfoView(LoginRequiredMixin, ListView):
         history_key = 'history_%d' % user.id
         # 获取用户最新浏览的5个商品id
         sku_ids = conn.lrange(history_key, 0, 4)
+        # redis取出的数据[b'2',b'7']...
+        # 使用列表推导式转成[2,7]...
+        sku_ids = [int(sku_id) for sku_id in sku_ids]
+        # print("sku_ids:%s" % sku_ids)
         # 从数据库中查询用户浏览的商品的具体信息
         goods_li = GoodsSKU.objects.filter(id__in=sku_ids)
         # 遍历获取用户浏览的商品信息
@@ -256,6 +260,7 @@ class UserInfoView(LoginRequiredMixin, ListView):
                     goods_res.append(goods)
 
         # 组织上下文
+        # print("goods_res:%s" % goods_res)
         content = {'page': 'user', 'site': address, 'goods_li': goods_res}
         return render(request, 'user/user_center_info.html', content)
 

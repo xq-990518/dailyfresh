@@ -182,14 +182,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
 
 # nginx服务器IP地址
-# SERVER_IP = 'http://192.168.0.106'
+SERVER_IP = 'http://192.168.0.106'
 # Fdfs存储参数 客户端配置文件同服务器端，服务器地址
 CUSTOM_STORAGE_OPTIONS = {
     # FDFS系统配置文件
     'CLIENT_CONF': './utils/fdfs/client.conf',
     # nginx服务器IP地址及端口号
-    # 'BASE_URL': SERVER_IP + ':8888/',
-    'BASE_URL': 'http://305924vr98.wicp.vip:53118/',
+    'BASE_URL': SERVER_IP + ':8888/',
+    # 'BASE_URL': 'http://305924vr98.wicp.vip:53118/',
 }
 
 # 全文检索框架配置
@@ -208,4 +208,4 @@ HAYSTACK_CONNECTIONS = {
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 # 指定搜索结果每页显示的条数
-HAYSTACK_SEARCH_RESULTS_PER_PAGE=1
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 1
