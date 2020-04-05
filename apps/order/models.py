@@ -25,9 +25,29 @@ class OrderInfo(BaseModel):
         'UNCOMMENT': 4,
         'FINISHED': 5
     }
+    ORDER_STATUS = {
+        1: '待支付',
+        2: '待发货',
+        3: '待收货',
+        4: '待评价',
+        5: '已完成'
+    }
 
-    PAY_METHOD_CHOICES = ((1, '货到付款'), (2, '微信付款'), (3, '支付宝'), (4, '银联支付'))
-    ORDER_STATUS_CHOICES = ((1, '待支付'), (2, '待发货'), (3, '待收货'), (4, '待评价'), (5, '已完成'))
+    PAY_METHOD_CHOICES = (
+        (1, '货到付款'),
+        (2, '微信付款'),
+        (3, '支付宝'),
+        (4, '银联支付')
+    )
+
+    ORDER_STATUS_CHOICES = (
+        (1, '待支付'),
+        (2, '待发货'),
+        (3, '待收货'),
+        (4, '待评价'),
+        (5, '已完成')
+    )
+
     order_id = models.CharField(max_length=128, primary_key=True, verbose_name='订单编号')
     user = models.ForeignKey('user.User', verbose_name='用户', on_delete=models.CASCADE)
     addr = models.ForeignKey('user.Address', verbose_name='地址', on_delete=models.CASCADE)
