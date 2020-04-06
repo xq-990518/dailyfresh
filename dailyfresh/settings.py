@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 SECRET_KEY = '94k!jcnm^tzgoq6(huf4cwqn221$tui2al_jb4rqfgxidcg($7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -78,8 +78,7 @@ ROOT_URLCONF = 'dailyfresh.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # django认证系统使用的模型类
-AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'user.User' # python manage.py createsuperuser
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -151,6 +150,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# 指定收集静态文件的路径
+STATIC_ROOT='/var/clown/dailyfresh/static'
 
 # 富文本编辑器配置
 TINYMCE_DEFAULT_CONFIG = {
@@ -162,7 +163,7 @@ TINYMCE_DEFAULT_CONFIG = {
 # 发送邮件配置
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # 发邮件的smtp服务器地址
-EMAIL_HOST = 'smtp.qq.com'  # 发送邮件的邮箱 的 SMTP服务器，这里用了163邮箱
+EMAIL_HOST = 'smtp.qq.com'  # 发送邮件的邮箱 的 SMTP服务器，这里用了QQ邮箱
 EMAIL_PORT = 25  # 发件箱的SMTP服务器端口
 EMAIL_USE_TLS = False  # 是否使用TLS安全传输协议(用于在两个通信应用程序之间提供保密性和数据完整性。)
 EMAIL_USE_SSL = False  # 是否使用SSL加密，qq企业邮箱要求使用
@@ -176,6 +177,7 @@ DEFAULT_EMAIL_FORM = '天天生鲜<1141021298@qq.com>'
 # 配置登录url地址
 LOGIN_URL = '/user/login'
 
+# Django默认的文件存储
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 
 # 设置Django的文件存储类
@@ -189,7 +191,7 @@ CUSTOM_STORAGE_OPTIONS = {
     'CLIENT_CONF': './utils/fdfs/client.conf',
     # nginx服务器IP地址及端口号
     'BASE_URL': SERVER_IP + ':8888/',
-    # 'BASE_URL': 'http://305393ri91.qicp.vip:44302/',
+    # 'BASE_URL': 'http://305924vr98.wicp.vip:53118/',
 }
 
 # 全文检索框架配置
@@ -208,4 +210,4 @@ HAYSTACK_CONNECTIONS = {
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 # 指定搜索结果每页显示的条数
-HAYSTACK_SEARCH_RESULTS_PER_PAGE=1
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 1

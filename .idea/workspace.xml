@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/views.py" afterDir="false" />
+    <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="添加项目说明">
+      <change afterPath="$PROJECT_DIR$/doc/nginx/nginx1.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/nginx/nginx2.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/项目总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dailyfresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dailyfresh/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/goods/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/goods/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_1.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi.log" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi.pid" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi2.log" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi2.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,35 +62,42 @@
     </option>
   </component>
   <component name="ProjectId" id="1VyDDYAaESGGIM4raw7knpHmZqK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/cart" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/mysql" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/cart" />
-      <recent name="$PROJECT_DIR$/templates/search" />
-      <recent name="$PROJECT_DIR$/templates/goods" />
-      <recent name="$PROJECT_DIR$/templates/base" />
-      <recent name="$PROJECT_DIR$/utils/fdfs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/order" />
       <recent name="$PROJECT_DIR$/templates/goods" />
       <recent name="$PROJECT_DIR$/templates/user" />
       <recent name="$PROJECT_DIR$/templates/base" />
       <recent name="$PROJECT_DIR$/apps" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/mysql" />
+      <recent name="$PROJECT_DIR$/doc" />
+      <recent name="$PROJECT_DIR$/doc/nginx" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/templates/order" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.place_order.html">
+    <configuration name="place_order.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/dailyfresh/static/place_order.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="dailyfresh" type="Python.DjangoServer" factoryName="Django server">
       <module name="dailyfresh" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +122,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.place_order.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -147,7 +165,8 @@
       <workItem from="1583805434693" duration="59000" />
       <workItem from="1583805668005" duration="76000" />
       <workItem from="1583805791354" duration="108000" />
-      <workItem from="1583822887004" duration="86940000" />
+      <workItem from="1583822887004" duration="87299000" />
+      <workItem from="1585797872802" duration="86082000" />
     </task>
     <task id="LOCAL-00001" summary="新增.idea隐藏文件">
       <created>1585718943137</created>
@@ -163,16 +182,89 @@
       <option name="project" value="LOCAL" />
       <updated>1585731327939</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加购物车记录,显示购物车">
+      <created>1585746691697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585746691697</updated>
+    </task>
+    <task id="LOCAL-00004" summary="添加依赖环境启动脚本">
+      <created>1585798437489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585798437489</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加购物车模块,购物车记录更新,删除,以及前段代码的编写,修改部分模板文件">
+      <created>1585812414728</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585812414728</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加订单模块,修改订单界面-后台">
+      <created>1585989519321</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585989519321</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改订单模块.支持高并发,使用悲观锁和乐观锁">
+      <created>1586005937652</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586005937652</updated>
+    </task>
+    <task id="LOCAL-00008" summary="添加订单支付功能">
+      <created>1586104652656</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586104652656</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加立即购买功能">
+      <created>1586147015609</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586147015609</updated>
+    </task>
+    <task id="LOCAL-00010" summary="添加配置">
+      <created>1586147585564</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586147585564</updated>
+    </task>
+    <task id="LOCAL-00011" summary="添加部署项目配置">
+      <created>1586164587980</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586164587980</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="新增.idea隐藏文件" />
     <MESSAGE value="新增商品全文搜索框架,增加更多变量" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增商品全文搜索框架,增加更多变量" />
+    <MESSAGE value="添加购物车记录,显示购物车" />
+    <MESSAGE value="添加依赖环境启动脚本" />
+    <MESSAGE value="添加购物车模块,购物车记录更新,删除,以及前段代码的编写,修改部分模板文件" />
+    <MESSAGE value="添加订单模块,修改订单界面-后台" />
+    <MESSAGE value="修改订单模块.支持高并发,使用悲观锁和乐观锁" />
+    <MESSAGE value="添加订单支付功能" />
+    <MESSAGE value="添加立即购买功能" />
+    <MESSAGE value="添加配置" />
+    <MESSAGE value="添加部署项目配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部署项目配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="88" y="27" width="800" height="600" key="#Inspections" timestamp="1578913397863">
@@ -187,14 +279,23 @@
       <screen x="0" y="27" width="1285" height="800" />
     </state>
     <state x="237" y="88" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805837856" />
-    <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585717202749">
-      <screen x="0" y="27" width="1151" height="706" />
+    <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586084304799">
+      <screen x="0" y="27" width="1100" height="668" />
     </state>
+    <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1100.668@0.27.1100.668" timestamp="1586084304799" />
     <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
-    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2" timestamp="1585731327369">
-      <screen x="0" y="27" width="1151" height="706" />
+    <state x="139" y="27" width="867" height="669" key="CommitChangelistDialog2" timestamp="1586176869359">
+      <screen x="0" y="27" width="1161" height="669" />
     </state>
-    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585731327369" />
+    <state x="131" y="27" width="867" height="664" key="CommitChangelistDialog2/0.27.1096.664@0.27.1096.664" timestamp="1586164587650" />
+    <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2/0.27.1100.668@0.27.1100.668" timestamp="1586104652287" />
+    <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585746691260" />
+    <state x="139" y="27" width="867" height="669" key="CommitChangelistDialog2/0.27.1161.669@0.27.1161.669" timestamp="1586176869359" />
+    <state x="100" y="126" width="900" height="468" key="DiffContextDialog" timestamp="1586162285850">
+      <screen x="0" y="27" width="1096" height="664" />
+    </state>
+    <state x="100" y="126" key="DiffContextDialog/0.27.1096.664@0.27.1096.664" timestamp="1586162285850" />
+    <state x="100" y="127" width="900" height="468" key="DiffContextDialog/0.27.1100.668@0.27.1100.668" timestamp="1586102181080" />
     <state x="593" y="146" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584068617098">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
@@ -253,29 +354,40 @@
     <state width="1006" height="182" key="GridCell.Tab.1.right/0.27.1060.670@0.27.1060.670" timestamp="1583833607644" />
     <state width="1156" height="215" key="GridCell.Tab.1.right/0.27.1210.751@0.27.1210.751" timestamp="1579081283748" />
     <state width="1866" height="309" key="GridCell.Tab.1.right/0.27.1920.987@0.27.1920.987" timestamp="1583830324406" />
-    <state x="359" y="88" width="422" height="591" key="RollbackChangesDialog" timestamp="1585735800688">
-      <screen x="0" y="27" width="1151" height="706" />
+    <state x="342" y="85" width="422" height="591" key="RollbackChangesDialog" timestamp="1586162720913">
+      <screen x="0" y="27" width="1096" height="664" />
     </state>
+    <state x="342" y="85" width="422" height="591" key="RollbackChangesDialog/0.27.1096.664@0.27.1096.664" timestamp="1586162720913" />
+    <state x="343" y="85" width="429" height="591" key="RollbackChangesDialog/0.27.1100.668@0.27.1100.668" timestamp="1586102182415" />
     <state x="359" y="88" width="422" height="591" key="RollbackChangesDialog/0.27.1151.706@0.27.1151.706" timestamp="1585735800688" />
-    <state x="112" y="27" width="1027" height="706" key="SettingsEditor" timestamp="1585741269896">
-      <screen x="0" y="27" width="1151" height="706" />
+    <state x="110" y="27" width="1793" height="987" key="SettingsEditor" timestamp="1586142930496">
+      <screen x="0" y="27" width="1920" height="987" />
     </state>
     <state x="103" y="27" width="900" height="670" key="SettingsEditor/0.27.1060.670@0.27.1060.670" timestamp="1583839457041" />
     <state x="103" y="27" width="900" height="674" key="SettingsEditor/0.27.1064.674@0.27.1064.674" timestamp="1583823012292" />
+    <state x="63" y="27" width="1027" height="668" key="SettingsEditor/0.27.1100.668@0.27.1100.668" timestamp="1585985118795" />
     <state x="112" y="27" width="1027" height="706" key="SettingsEditor/0.27.1151.706@0.27.1151.706" timestamp="1585741269896" />
     <state x="124" y="62" width="1037" height="737" key="SettingsEditor/0.27.1285.800@0.27.1285.800" timestamp="1583805898964" />
     <state x="186" y="27" width="1274" height="807" key="SettingsEditor/0.27.1918.807@0.27.1918.807" timestamp="1583823111792" />
-    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1585738267170">
-      <screen x="0" y="27" width="1151" height="706" />
+    <state x="110" y="27" width="1793" height="987" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1586142930496" />
+    <state x="161" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1586164599646">
+      <screen x="0" y="27" width="1096" height="664" />
     </state>
-    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585738267170" />
-    <state x="282" y="172" key="com.intellij.ide.util.TipDialog" timestamp="1583822889559">
-      <screen x="0" y="27" width="1064" height="674" />
+    <state x="161" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1096.664@0.27.1096.664" timestamp="1586164599646" />
+    <state x="162" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1100.668@0.27.1100.668" timestamp="1586104662348" />
+    <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585746702925" />
+    <state x="100" y="127" width="900" height="468" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585804529006">
+      <screen x="0" y="27" width="1100" height="668" />
+    </state>
+    <state x="100" y="127" width="900" height="468" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1100.668@0.27.1100.668" timestamp="1585804529006" />
+    <state x="292" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1585797878975">
+      <screen x="0" y="27" width="1100" height="668" />
     </state>
     <state x="270" y="165" key="com.intellij.ide.util.TipDialog/0.27.1021.652@0.27.1021.652" timestamp="1579004000505" />
     <state x="272" y="164" key="com.intellij.ide.util.TipDialog/0.27.1029.639@0.27.1029.639" timestamp="1579243280314" />
     <state x="320" y="157" key="com.intellij.ide.util.TipDialog/0.27.1064.616@0.27.1064.616" timestamp="1578739338814" />
     <state x="282" y="172" key="com.intellij.ide.util.TipDialog/0.27.1064.674@0.27.1064.674" timestamp="1583822889559" />
+    <state x="292" y="171" key="com.intellij.ide.util.TipDialog/0.27.1100.668@0.27.1100.668" timestamp="1585797878975" />
     <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805668201" />
     <state x="508" y="239" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1579090187599" />
     <state x="249" y="159" key="com.intellij.ide.util.TipDialog/0.27.940.624@0.27.940.624" timestamp="1578813478984" />
@@ -291,11 +403,17 @@
       <screen x="0" y="27" width="1151" height="706" />
     </state>
     <state x="236" y="160" width="668" height="453" key="git4idea.merge.GitPullDialog/0.27.1151.706@0.27.1151.706" timestamp="1585723924818" />
-    <state x="220" y="26" width="709" height="761" key="search.everywhere.popup" timestamp="1585712656254">
-      <screen x="0" y="27" width="1151" height="706" />
+    <state x="366" y="27" width="1185" height="985" key="search.everywhere.popup" timestamp="1586177519929">
+      <screen x="0" y="27" width="1920" height="987" />
     </state>
     <state x="209" y="26" width="672" height="678" key="search.everywhere.popup/0.27.1093.630@0.27.1093.630" timestamp="1578413685575" />
+    <state x="209" y="26" width="676" height="716" key="search.everywhere.popup/0.27.1096.664@0.27.1096.664" timestamp="1586147701041" />
     <state x="220" y="26" width="709" height="761" key="search.everywhere.popup/0.27.1151.706@0.27.1151.706" timestamp="1585712656254" />
     <state x="233" y="26" width="749" height="730" key="search.everywhere.popup/0.27.1217.678@0.27.1217.678" timestamp="1580125915671" />
+    <state x="366" y="27" width="1185" height="985" key="search.everywhere.popup/0.27.1920.987@0.27.1920.987" timestamp="1586177519929" />
+    <state x="273" y="268" width="540" height="188" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586163942558">
+      <screen x="0" y="27" width="1096" height="664" />
+    </state>
+    <state x="273" y="268" width="540" height="188" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1096.664@0.27.1096.664" timestamp="1586163942558" />
   </component>
 </project>
