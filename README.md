@@ -31,4 +31,24 @@
 
 4.uwsgi的启动和停止
 * 启动：uwsgi --ini 配置文件路径
-* 停止：ｕｗｓｇｉ --stop uwsgi.pid路径
+* 停止：uwsgi --stop uwsgi.pid路径
+
+5. FASTDFS解决问题
+* 海量储存，存储容量扩展方便
+*　文件内容可重复　
+*　结合nginx提高网站访问图片的效率
+
+6. 悲观锁　乐观锁
+冲突比较少的时候，使用乐观锁
+冲突比较多的时候，使用悲观锁
+
+7. mysql 隔离级别
+Read Uncommitted(读取未提交内容)
+Read Committed(读取提交内容)
+Repeatable Read(可重读)(默认事务隔离级别)
+Serializable(可串行化)
+
+设置隔离级别：
+在配置文件中加：
+transaction-isolocation = READ-COMMITTED
+Django2.0之后会默认更改

@@ -6,6 +6,7 @@ from django.urls import reverse
 from user.models import User, Address
 from goods.models import GoodsSKU
 from order.models import OrderInfo, OrderGoods
+# 导入加密包
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from dailyfresh import settings
 from itsdangerous import SignatureExpired

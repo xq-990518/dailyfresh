@@ -128,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # django认证系统使用的模型类
-AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'user.User' # python manage.py createsuperuser
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -177,6 +177,7 @@ DEFAULT_EMAIL_FORM = '天天生鲜<1141021298@qq.com>'
 # 配置登录url地址
 LOGIN_URL = '/user/login'
 
+# Django默认的文件存储
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 
 # 设置Django的文件存储类

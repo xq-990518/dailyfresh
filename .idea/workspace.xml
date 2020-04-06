@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="添加配置">
-      <change afterPath="$PROJECT_DIR$/uwsgi.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi2.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi2.pid" afterDir="false" />
+    <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="添加项目说明">
+      <change afterPath="$PROJECT_DIR$/doc/nginx/nginx1.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/nginx/nginx2.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/项目总结.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dailyfresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dailyfresh/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/static_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/static_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/goods/static_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/goods/static_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi.log" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi.pid" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi2.log" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi2.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/mysql" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -86,11 +87,11 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/doc/mysql" />
+      <recent name="$PROJECT_DIR$/doc" />
+      <recent name="$PROJECT_DIR$/doc/nginx" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/templates/order" />
-      <recent name="$PROJECT_DIR$/doc/command" />
-      <recent name="$PROJECT_DIR$/doc/run" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.place_order.html">
@@ -165,7 +166,7 @@
       <workItem from="1583805668005" duration="76000" />
       <workItem from="1583805791354" duration="108000" />
       <workItem from="1583822887004" duration="87299000" />
-      <workItem from="1585797872802" duration="77875000" />
+      <workItem from="1585797872802" duration="86082000" />
     </task>
     <task id="LOCAL-00001" summary="新增.idea隐藏文件">
       <created>1585718943137</created>
@@ -237,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586147585564</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加部署项目配置">
+      <created>1586164587980</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586164587980</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +263,8 @@
     <MESSAGE value="添加订单支付功能" />
     <MESSAGE value="添加立即购买功能" />
     <MESSAGE value="添加配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加配置" />
+    <MESSAGE value="添加部署项目配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部署项目配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="88" y="27" width="800" height="600" key="#Inspections" timestamp="1578913397863">
@@ -275,12 +284,13 @@
     </state>
     <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1100.668@0.27.1100.668" timestamp="1586084304799" />
     <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
-    <state x="131" y="27" width="867" height="664" key="CommitChangelistDialog2" timestamp="1586163884524">
-      <screen x="0" y="27" width="1096" height="664" />
+    <state x="139" y="27" width="867" height="669" key="CommitChangelistDialog2" timestamp="1586176869359">
+      <screen x="0" y="27" width="1161" height="669" />
     </state>
-    <state x="131" y="27" width="867" height="664" key="CommitChangelistDialog2/0.27.1096.664@0.27.1096.664" timestamp="1586163884524" />
+    <state x="131" y="27" width="867" height="664" key="CommitChangelistDialog2/0.27.1096.664@0.27.1096.664" timestamp="1586164587650" />
     <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2/0.27.1100.668@0.27.1100.668" timestamp="1586104652287" />
     <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585746691260" />
+    <state x="139" y="27" width="867" height="669" key="CommitChangelistDialog2/0.27.1161.669@0.27.1161.669" timestamp="1586176869359" />
     <state x="100" y="126" width="900" height="468" key="DiffContextDialog" timestamp="1586162285850">
       <screen x="0" y="27" width="1096" height="664" />
     </state>
@@ -360,10 +370,10 @@
     <state x="124" y="62" width="1037" height="737" key="SettingsEditor/0.27.1285.800@0.27.1285.800" timestamp="1583805898964" />
     <state x="186" y="27" width="1274" height="807" key="SettingsEditor/0.27.1918.807@0.27.1918.807" timestamp="1583823111792" />
     <state x="110" y="27" width="1793" height="987" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1586142930496" />
-    <state x="161" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1586147599671">
+    <state x="161" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1586164599646">
       <screen x="0" y="27" width="1096" height="664" />
     </state>
-    <state x="161" y="109" key="Vcs.Push.Dialog.v2/0.27.1096.664@0.27.1096.664" timestamp="1586147599671" />
+    <state x="161" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1096.664@0.27.1096.664" timestamp="1586164599646" />
     <state x="162" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1100.668@0.27.1100.668" timestamp="1586104662348" />
     <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585746702925" />
     <state x="100" y="127" width="900" height="468" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585804529006">
@@ -393,13 +403,14 @@
       <screen x="0" y="27" width="1151" height="706" />
     </state>
     <state x="236" y="160" width="668" height="453" key="git4idea.merge.GitPullDialog/0.27.1151.706@0.27.1151.706" timestamp="1585723924818" />
-    <state x="209" y="26" width="676" height="716" key="search.everywhere.popup" timestamp="1586147701041">
-      <screen x="0" y="27" width="1096" height="664" />
+    <state x="366" y="27" width="1185" height="985" key="search.everywhere.popup" timestamp="1586177519929">
+      <screen x="0" y="27" width="1920" height="987" />
     </state>
     <state x="209" y="26" width="672" height="678" key="search.everywhere.popup/0.27.1093.630@0.27.1093.630" timestamp="1578413685575" />
     <state x="209" y="26" width="676" height="716" key="search.everywhere.popup/0.27.1096.664@0.27.1096.664" timestamp="1586147701041" />
     <state x="220" y="26" width="709" height="761" key="search.everywhere.popup/0.27.1151.706@0.27.1151.706" timestamp="1585712656254" />
     <state x="233" y="26" width="749" height="730" key="search.everywhere.popup/0.27.1217.678@0.27.1217.678" timestamp="1580125915671" />
+    <state x="366" y="27" width="1185" height="985" key="search.everywhere.popup/0.27.1920.987@0.27.1920.987" timestamp="1586177519929" />
     <state x="273" y="268" width="540" height="188" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586163942558">
       <screen x="0" y="27" width="1096" height="664" />
     </state>
