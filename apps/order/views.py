@@ -21,7 +21,7 @@ from alipay import AliPay
 
 # Create your views here.
 class OrderPlaceView(LoginRequiredMixin, ListView):
-    '''提交定定页面显示'''
+    '''提交订单页面显示'''
 
     def post(self, request):
         '''提交订单页面显示'''
@@ -70,6 +70,68 @@ class OrderPlaceView(LoginRequiredMixin, ListView):
         addrs = Address.objects.filter(user=user)
 
         sku_ids = ','.join(sku_ids)
+        # 组织上下文
+        context = {
+            'skus': skus,
+            'total_count': total_count,
+            'total_price': total_price,
+            'transit_price': transit_price,
+            'total_pay': total_pay,
+            'addrs': addrs,
+            'sku_ids': sku_ids
+        }
+        # 使用模板
+        return render(request, 'order/place_order.html', context)
+
+# 购买商品
+class OrderBuyPlaceView(LoginRequiredMixin, ListView):
+    '''立即购买'''
+
+    def post(self, request):
+        '''提交订单页面显示'''
+
+        # 获取登录用户
+        user = request.user
+
+        # 获取参数sku_id
+        sku_id = request.POST.get('sku_id')
+
+        count = request.POST.get('total_count')
+        # 校验参数
+        if not all([sku_id, count]):
+            # 跳转到购物车页面
+            return redirect(reverse('goods:index'))
+
+        # 保存商品的总件数和总价格
+        total_count = count
+        total_price = 0
+        # 遍历sku_ids获取用户要购买的商品的信息
+        skus=[]
+        # 根据商品的id获取商品的信息
+        sku = GoodsSKU.objects.get(id=sku_id)
+        # 获取用户所要购买的商品的数量
+        # 计算商品的小计
+        amount = sku.price * int(total_count)
+        # 动态增加属性,count(保存购买商品的数量),amount(保存购买商品的小计)
+        sku.count = total_count
+        sku.amount = amount
+        # 追加
+        skus.append(sku)
+        # 累加计算商品的总件数和总价格
+        total_count += count
+        total_price += amount
+
+        # 运费:实际开发的时候,属于一个子系统
+        transit_price = 10
+
+        # 实付款
+        total_pay = total_price + transit_price
+
+        # 获取用户的收件地址
+        addrs = Address.objects.filter(user=user)
+
+        sku_ids = ','.join(sku_id)
+        print("sku_ids:%s" % sku_ids)
         # 组织上下文
         context = {
             'skus': skus,
