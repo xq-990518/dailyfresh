@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 SECRET_KEY = '94k!jcnm^tzgoq6(huf4cwqn221$tui2al_jb4rqfgxidcg($7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -150,6 +150,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# 指定收集静态文件的路径
+STATIC_ROOT='/var/clown/dailyfresh/static'
 
 # 富文本编辑器配置
 TINYMCE_DEFAULT_CONFIG = {
