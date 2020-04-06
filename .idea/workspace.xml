@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/doc/mysql/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/mysql/dailyfresh.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/order/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/order/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/goods/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/goods/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dailyfresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dailyfresh/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/order" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/mysql" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -79,11 +80,11 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/mysql" />
       <recent name="$PROJECT_DIR$/templates/order" />
       <recent name="$PROJECT_DIR$/doc/command" />
       <recent name="$PROJECT_DIR$/doc/run" />
       <recent name="$PROJECT_DIR$/templates/cart" />
-      <recent name="$PROJECT_DIR$/templates/search" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.place_order.html">
@@ -158,7 +159,7 @@
       <workItem from="1583805668005" duration="76000" />
       <workItem from="1583805791354" duration="108000" />
       <workItem from="1583822887004" duration="87299000" />
-      <workItem from="1585797872802" duration="65850000" />
+      <workItem from="1585797872802" duration="66457000" />
     </task>
     <task id="LOCAL-00001" summary="新增.idea隐藏文件">
       <created>1585718943137</created>
@@ -216,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586104652656</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加立即购买功能">
+      <created>1586147015609</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586147015609</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +240,8 @@
     <MESSAGE value="添加订单模块,修改订单界面-后台" />
     <MESSAGE value="修改订单模块.支持高并发,使用悲观锁和乐观锁" />
     <MESSAGE value="添加订单支付功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加订单支付功能" />
+    <MESSAGE value="添加立即购买功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加立即购买功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="88" y="27" width="800" height="600" key="#Inspections" timestamp="1578913397863">
@@ -252,9 +261,10 @@
     </state>
     <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1100.668@0.27.1100.668" timestamp="1586084304799" />
     <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
-    <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2" timestamp="1586104652287">
-      <screen x="0" y="27" width="1100" height="668" />
+    <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2" timestamp="1586147015287">
+      <screen x="0" y="27" width="1096" height="664" />
     </state>
+    <state x="131" y="27" key="CommitChangelistDialog2/0.27.1096.664@0.27.1096.664" timestamp="1586147015287" />
     <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2/0.27.1100.668@0.27.1100.668" timestamp="1586104652287" />
     <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585746691260" />
     <state x="100" y="127" width="900" height="468" key="DiffContextDialog" timestamp="1586102181080">

@@ -1,11 +1,16 @@
 # dailyfresh
 天天生鲜项目
+1. 修改配置文件settings
+* redis
+* databases
+* 注册使用的邮件服务配置
+* nginx配置
 
-1.添加shell脚本
+2. 添加shell脚本
 * 基础脚本:可和temp.sh结合使用
 * celery脚本存放于项目目录下
 
-2.支付SDK
+3. 支付SDK
 
 商家账号lbdfii0246@sandbox.com
 商户UID2088102180788261
