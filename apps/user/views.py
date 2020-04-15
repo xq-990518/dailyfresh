@@ -10,7 +10,7 @@ from order.models import OrderInfo, OrderGoods
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from dailyfresh import settings
 from itsdangerous import SignatureExpired
-from celery_tasks.tasks import send_register_active_email
+from celery_tasks.tasks import send_register_active_email, send_update_password_email
 from django.contrib.auth import authenticate, login, logout
 from utils.mixin import LoginRequiredMixin
 from django.core.mail import send_mail, EmailMultiAlternatives
@@ -161,6 +161,109 @@ class ActiveView(ListView):
         except SignatureExpired as e:
             # 激活链接已过期
             return HttpResponse("激活链接已过期")
+
+
+class UpdateInfoView(ListView):
+    '''修改密码请求处理'''
+
+    def get(self, request):
+        return render(request, 'user/user_update.html')
+
+    def post(self, request):
+        # 接收参数
+        username = request.POST.get('user_name')
+        email = request.POST.get('email')
+        allow = request.POST.get('allow')
+        # 校验参数
+        if not all([username, email]):
+            # 数据不完整
+            return render(request, 'user/user_update.html', {'errmsg': '数据不完整'})
+        # 校验邮箱
+        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+            # 邮箱不合法
+            return render(request, 'user/user_update.html', {'errmsg': '邮箱格式不正确'})
+
+        if allow != 'on':
+            return render(request, 'user/user_update.html', {'errmsg': '请同意协议'})
+
+        # 校验用户是否重复
+        try:
+            user = User.objects.get(username=username, email=email)
+        except User.DoesNotExist:
+            # 用户名不存在
+            user = None
+
+        if not user:
+            # 用户不存在
+            return render(request, 'user/user_update.html', {'errmsg': '该用户不存在'})
+
+        # 进行业务处理
+        # 发送激活邮件,包含激活链接: http://192.168.1.13:8000/user/updatePwd?user_id=user.id
+        # 激活链接中需要包含用户的身份信息,并且要把身份信息进行加密
+        # 加密用户的身份信息,生成激活的token
+        # 设置加密的SECRET_KEY,以及过期时间1小时
+        serializer = Serializer(settings.SECRET_KEY, 3600)
+        info = {'confirm': user.id}
+        token = serializer.dumps(info)
+        token = token.decode('utf8')
+
+        # 发邮件
+        send_update_password_email.delay(email, username, token)
+        # 返回应答,跳转到首页
+        return redirect(reverse('goods:index'))
+
+
+class showUpdatePageView(ListView):
+    '''显示修改页面'''
+    def get(self, request, token):
+        '''显示修改密码界面'''
+
+        # 获取要修改的用户信息
+        serializer = Serializer(settings.SECRET_KEY, 3600)
+        try:
+            info = serializer.loads(token)
+            # 获取待修改用户的ID
+            user_id = info['confirm']
+            # 组织上下文
+            context = {
+                'user_id': user_id
+            }
+            return render(request, 'user/user_update_password.html', context)
+        except SignatureExpired as e:
+            # 激活链接已过期
+            return HttpResponse("链接已过期")
+
+
+class UpdatePwdView(ListView):
+    '''修改密码'''
+
+    def post(self, request):
+        '''修改密码'''
+
+        # 接收参数
+        user_id = request.POST.get('user_id')
+        password = request.POST.get('pwd')
+        pwd = request.POST.get('cpwd')
+        allow = request.POST.get('allow')
+
+        # 进行数据校验
+        if not all([password, pwd]):
+            # 数据不完整
+            return render(request, 'user/user_update_password.html', {'errmsg': '数据不完整'})
+
+        if password != pwd:
+            return render(request, 'user/user_update_password.html', {'errmsg': '两次密码不一致'})
+
+        if allow != 'on':
+            return render(request, 'user/user_update_password.html', {'errmsg': '请同意协议'})
+
+        try:
+            user = User.objects.get(id=user_id)
+            user.set_password(password)
+            user.save()
+            return redirect(reverse('user:login'))
+        except User.DoesNotExist:
+            return render(request, 'user/user_update_password.html', {'errmsg': '用户不存在'})
 
 
 class LoginView(ListView):

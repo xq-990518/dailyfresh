@@ -1,6 +1,17 @@
 # dailyfresh
 天天生鲜项目
 
+如果IP地址改变，请更改setting中ip,以及redis,fastDFS的 storage-trackered 以及client的ip和 celery的ip,mysql的ip
+修改ip
+settings 
+redis
+storage
+tracker
+client
+celery
+mysql
+
+
 1.修改配置文件settings
  * redis
  * databases
