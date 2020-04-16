@@ -4,13 +4,13 @@
 如果IP地址改变，请更改setting中ip,以及redis,fastDFS的 storage-trackered 以及client的ip和 celery的ip,mysql的ip
 修改ip
 settings 
-redis
+--redis--不需改
 storage
 tracker
 client
 celery
 mysql
-
+/etc/fdfs/mod_fastdfs.conf
 
 1.修改配置文件settings
  * redis

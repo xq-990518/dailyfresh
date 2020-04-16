@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/user/user_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/user_update_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/static_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/order/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/celery_tasks/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/celery_tasks/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dailyfresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dailyfresh/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/fdfs/client.conf" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fdfs/client.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi.ini" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uwsgi.log" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uwsgi.pid" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi2.ini" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi2.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,19 +78,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/apps/order" />
-      <recent name="$PROJECT_DIR$/templates/goods" />
-      <recent name="$PROJECT_DIR$/templates/user" />
-      <recent name="$PROJECT_DIR$/templates/base" />
-      <recent name="$PROJECT_DIR$/apps" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/user" />
       <recent name="$PROJECT_DIR$/doc/mysql" />
       <recent name="$PROJECT_DIR$/doc" />
       <recent name="$PROJECT_DIR$/doc/nginx" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/order" />
+      <recent name="$PROJECT_DIR$/templates/goods" />
+      <recent name="$PROJECT_DIR$/templates/user" />
+      <recent name="$PROJECT_DIR$/templates/base" />
+      <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.place_order.html">
@@ -166,7 +165,10 @@
       <workItem from="1583805668005" duration="76000" />
       <workItem from="1583805791354" duration="108000" />
       <workItem from="1583822887004" duration="87299000" />
-      <workItem from="1585797872802" duration="98139000" />
+      <workItem from="1585797872802" duration="100273000" />
+      <workItem from="1586956679014" duration="2265000" />
+      <workItem from="1586963954103" duration="2156000" />
+      <workItem from="1587000861532" duration="3914000" />
     </task>
     <task id="LOCAL-00001" summary="新增.idea隐藏文件">
       <created>1585718943137</created>
@@ -252,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586178245962</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="添加项目说明">
+      <created>1586919135634</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586919135641</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,24 +301,24 @@
     </state>
     <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1100.668@0.27.1100.668" timestamp="1586084304799" />
     <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
-    <state x="230" y="27" width="867" height="669" key="CommitChangelistDialog2" timestamp="1586178245532">
-      <screen x="0" y="27" width="1920" height="987" />
+    <state x="230" y="27" width="867" height="669" key="CommitChangelistDialog2" timestamp="1586919134461">
+      <screen x="0" y="27" width="1918" height="807" />
     </state>
     <state x="131" y="27" width="867" height="664" key="CommitChangelistDialog2/0.27.1096.664@0.27.1096.664" timestamp="1586164587650" />
     <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2/0.27.1100.668@0.27.1100.668" timestamp="1586104652287" />
     <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585746691260" />
     <state x="139" y="27" width="867" height="669" key="CommitChangelistDialog2/0.27.1161.669@0.27.1161.669" timestamp="1586176869359" />
+    <state x="230" y="27" key="CommitChangelistDialog2/0.27.1918.807@0.27.1918.807" timestamp="1586919134461" />
     <state x="230" y="27" key="CommitChangelistDialog2/0.27.1920.987@0.27.1920.987" timestamp="1586178245532" />
-    <state x="100" y="126" width="900" height="468" key="DiffContextDialog" timestamp="1586162285850">
-      <screen x="0" y="27" width="1096" height="664" />
+    <state x="91" y="114" width="795" height="533" key="DiffContextDialog" timestamp="1587004313325">
+      <screen x="0" y="27" width="994" height="620" />
     </state>
     <state x="100" y="126" key="DiffContextDialog/0.27.1096.664@0.27.1096.664" timestamp="1586162285850" />
     <state x="100" y="127" width="900" height="468" key="DiffContextDialog/0.27.1100.668@0.27.1100.668" timestamp="1586102181080" />
+    <state x="91" y="114" width="795" height="533" key="DiffContextDialog/0.27.994.620@0.27.994.620" timestamp="1587004313325" />
     <state x="593" y="146" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584068617098">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
-    <state x="349" y="103" key="FileChooserDialogImpl/0.27.1130.633@0.27.1130.633" timestamp="1578224037192" />
-    <state x="350" y="103" width="424" height="491" key="FileChooserDialogImpl/0.27.1134.637@0.27.1134.637" timestamp="1578222767983" />
     <state x="593" y="146" key="FileChooserDialogImpl/0.27.1920.987@0.27.1920.987" timestamp="1584068617098" />
     <state width="1006" height="182" key="GridCell.Tab.0.bottom" timestamp="1583833607641">
       <screen x="0" y="27" width="1060" height="670" />
@@ -363,12 +372,14 @@
     <state width="1006" height="182" key="GridCell.Tab.1.right/0.27.1060.670@0.27.1060.670" timestamp="1583833607644" />
     <state width="1156" height="215" key="GridCell.Tab.1.right/0.27.1210.751@0.27.1210.751" timestamp="1579081283748" />
     <state width="1866" height="309" key="GridCell.Tab.1.right/0.27.1920.987@0.27.1920.987" timestamp="1583830324406" />
-    <state x="342" y="85" width="422" height="591" key="RollbackChangesDialog" timestamp="1586162720913">
-      <screen x="0" y="27" width="1096" height="664" />
+    <state x="310" y="81" width="271" height="455" key="RollbackChangesDialog" timestamp="1587004409975">
+      <screen x="0" y="27" width="994" height="620" />
     </state>
     <state x="342" y="85" width="422" height="591" key="RollbackChangesDialog/0.27.1096.664@0.27.1096.664" timestamp="1586162720913" />
     <state x="343" y="85" width="429" height="591" key="RollbackChangesDialog/0.27.1100.668@0.27.1100.668" timestamp="1586102182415" />
     <state x="359" y="88" width="422" height="591" key="RollbackChangesDialog/0.27.1151.706@0.27.1151.706" timestamp="1585735800688" />
+    <state x="599" y="97" key="RollbackChangesDialog/0.27.1918.807@0.27.1918.807" timestamp="1586919909070" />
+    <state x="310" y="81" width="271" height="455" key="RollbackChangesDialog/0.27.994.620@0.27.994.620" timestamp="1587004409975" />
     <state x="110" y="27" width="1793" height="987" key="SettingsEditor" timestamp="1586142930496">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
@@ -379,19 +390,21 @@
     <state x="124" y="62" width="1037" height="737" key="SettingsEditor/0.27.1285.800@0.27.1285.800" timestamp="1583805898964" />
     <state x="186" y="27" width="1274" height="807" key="SettingsEditor/0.27.1918.807@0.27.1918.807" timestamp="1583823111792" />
     <state x="110" y="27" width="1793" height="987" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1586142930496" />
-    <state x="282" y="149" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1586178255158">
-      <screen x="0" y="27" width="1920" height="987" />
+    <state x="282" y="127" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1586919175921">
+      <screen x="0" y="27" width="1918" height="807" />
     </state>
     <state x="161" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1096.664@0.27.1096.664" timestamp="1586164599646" />
     <state x="162" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1100.668@0.27.1100.668" timestamp="1586104662348" />
     <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585746702925" />
+    <state x="282" y="127" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1918.807@0.27.1918.807" timestamp="1586919175921" />
     <state x="282" y="149" key="Vcs.Push.Dialog.v2/0.27.1920.987@0.27.1920.987" timestamp="1586178255158" />
-    <state x="100" y="127" width="900" height="468" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585804529006">
-      <screen x="0" y="27" width="1100" height="668" />
+    <state x="90" y="120" width="814" height="435" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587004704828">
+      <screen x="0" y="27" width="994" height="620" />
     </state>
     <state x="100" y="127" width="900" height="468" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1100.668@0.27.1100.668" timestamp="1585804529006" />
-    <state x="292" y="171" key="com.intellij.ide.util.TipDialog" timestamp="1585797878975">
-      <screen x="0" y="27" width="1100" height="668" />
+    <state x="90" y="120" width="814" height="435" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.994.620@0.27.994.620" timestamp="1587004704828" />
+    <state x="263" y="160" key="com.intellij.ide.util.TipDialog" timestamp="1587000912022">
+      <screen x="0" y="27" width="994" height="620" />
     </state>
     <state x="270" y="165" key="com.intellij.ide.util.TipDialog/0.27.1021.652@0.27.1021.652" timestamp="1579004000505" />
     <state x="272" y="164" key="com.intellij.ide.util.TipDialog/0.27.1029.639@0.27.1029.639" timestamp="1579243280314" />
@@ -399,10 +412,11 @@
     <state x="282" y="172" key="com.intellij.ide.util.TipDialog/0.27.1064.674@0.27.1064.674" timestamp="1583822889559" />
     <state x="292" y="171" key="com.intellij.ide.util.TipDialog/0.27.1100.668@0.27.1100.668" timestamp="1585797878975" />
     <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805668201" />
-    <state x="508" y="239" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1579090187599" />
+    <state x="508" y="239" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1586963954063" />
     <state x="249" y="159" key="com.intellij.ide.util.TipDialog/0.27.940.624@0.27.940.624" timestamp="1578813478984" />
     <state x="146" y="156" key="com.intellij.ide.util.TipDialog/0.27.983.604@0.27.983.604" timestamp="1578404873312" />
     <state x="261" y="154" key="com.intellij.ide.util.TipDialog/0.27.987.600@0.27.987.600" timestamp="1578913061089" />
+    <state x="263" y="160" key="com.intellij.ide.util.TipDialog/0.27.994.620@0.27.994.620" timestamp="1587000912022" />
     <state x="409" y="27" width="700" height="706" key="find.popup" timestamp="1585743723982">
       <screen x="0" y="27" width="1151" height="706" />
     </state>
