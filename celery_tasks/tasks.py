@@ -52,7 +52,7 @@ def send_register_active_email(to_email, username, token):
 # 定义任务函数
 @app.task
 def send_update_password_email(to_email, username, token):
-    '''发送激活邮件'''
+    '''发送修改密码邮件'''
     # 组织邮件信息
     # 发邮件
     # 主题信息
