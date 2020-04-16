@@ -10,10 +10,11 @@ PyMySQL==0.9.3
 python-alipay-sdk==2.0.1
 uWSGI==2.0.18
 Whoosh==2.7.4
-Pillow==6.2.1
-mutagen==1.44.0
 requests==2.23.0
 py3Fdfs==2.2.0
+
+# 可能没用到Pillow==6.2.1
+# 可能没用到mutagen==1.44.0
 
 # 模板
 ############################################
