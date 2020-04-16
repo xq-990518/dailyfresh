@@ -1,5 +1,6 @@
 # dailyfresh(天天生鲜项目)
-
+### author: 小丑(clown)
+### date:2020-04-09
 1.修改配置文件settings
  * redis
  * databases
