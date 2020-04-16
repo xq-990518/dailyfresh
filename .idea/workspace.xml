@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/static_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/fdfs/client.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/fdfs/mod_fastdfs.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/fdfs/storage.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/fdfs/tracker.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/redis/redis.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celery_tasks/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/celery_tasks/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dailyfresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dailyfresh/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/fdfs/client.conf" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fdfs/client.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uwsgi.ini" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uwsgi.log" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uwsgi.pid" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uwsgi2.ini" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi2.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,16 +69,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/redis" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/redis" />
+      <recent name="$PROJECT_DIR$/doc/fdfs" />
       <recent name="$PROJECT_DIR$/templates/user" />
       <recent name="$PROJECT_DIR$/doc/mysql" />
       <recent name="$PROJECT_DIR$/doc" />
-      <recent name="$PROJECT_DIR$/doc/nginx" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/order" />
@@ -168,7 +163,7 @@
       <workItem from="1585797872802" duration="100273000" />
       <workItem from="1586956679014" duration="2265000" />
       <workItem from="1586963954103" duration="2156000" />
-      <workItem from="1587000861532" duration="3914000" />
+      <workItem from="1587000861532" duration="4159000" />
     </task>
     <task id="LOCAL-00001" summary="新增.idea隐藏文件">
       <created>1585718943137</created>
@@ -261,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586919135641</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="机器IP修改,添加修改IP说明等">
+      <created>1587005933264</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587005933264</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +283,8 @@
     <MESSAGE value="添加配置" />
     <MESSAGE value="添加部署项目配置" />
     <MESSAGE value="添加项目说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加项目说明" />
+    <MESSAGE value="机器IP修改,添加修改IP说明等" />
+    <option name="LAST_COMMIT_MESSAGE" value="机器IP修改,添加修改IP说明等" />
   </component>
   <component name="WindowStateProjectService">
     <state x="88" y="27" width="800" height="600" key="#Inspections" timestamp="1578913397863">
@@ -301,15 +304,15 @@
     </state>
     <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1100.668@0.27.1100.668" timestamp="1586084304799" />
     <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
-    <state x="230" y="27" width="867" height="669" key="CommitChangelistDialog2" timestamp="1586919134461">
-      <screen x="0" y="27" width="1918" height="807" />
+    <state x="230" y="27" width="867" height="842" key="CommitChangelistDialog2" timestamp="1587005932672">
+      <screen x="0" y="27" width="1920" height="987" />
     </state>
     <state x="131" y="27" width="867" height="664" key="CommitChangelistDialog2/0.27.1096.664@0.27.1096.664" timestamp="1586164587650" />
     <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2/0.27.1100.668@0.27.1100.668" timestamp="1586104652287" />
     <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585746691260" />
     <state x="139" y="27" width="867" height="669" key="CommitChangelistDialog2/0.27.1161.669@0.27.1161.669" timestamp="1586176869359" />
     <state x="230" y="27" key="CommitChangelistDialog2/0.27.1918.807@0.27.1918.807" timestamp="1586919134461" />
-    <state x="230" y="27" key="CommitChangelistDialog2/0.27.1920.987@0.27.1920.987" timestamp="1586178245532" />
+    <state x="230" y="27" width="867" height="842" key="CommitChangelistDialog2/0.27.1920.987@0.27.1920.987" timestamp="1587005932672" />
     <state x="91" y="114" width="795" height="533" key="DiffContextDialog" timestamp="1587004313325">
       <screen x="0" y="27" width="994" height="620" />
     </state>
@@ -390,14 +393,14 @@
     <state x="124" y="62" width="1037" height="737" key="SettingsEditor/0.27.1285.800@0.27.1285.800" timestamp="1583805898964" />
     <state x="186" y="27" width="1274" height="807" key="SettingsEditor/0.27.1918.807@0.27.1918.807" timestamp="1583823111792" />
     <state x="110" y="27" width="1793" height="987" key="SettingsEditor/0.27.1920.987@0.27.1920.987" timestamp="1586142930496" />
-    <state x="282" y="127" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1586919175921">
-      <screen x="0" y="27" width="1918" height="807" />
+    <state x="282" y="149" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1587005945488">
+      <screen x="0" y="27" width="1920" height="987" />
     </state>
     <state x="161" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1096.664@0.27.1096.664" timestamp="1586164599646" />
     <state x="162" y="109" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1100.668@0.27.1100.668" timestamp="1586104662348" />
     <state x="170" y="114" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1151.706@0.27.1151.706" timestamp="1585746702925" />
     <state x="282" y="127" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1918.807@0.27.1918.807" timestamp="1586919175921" />
-    <state x="282" y="149" key="Vcs.Push.Dialog.v2/0.27.1920.987@0.27.1920.987" timestamp="1586178255158" />
+    <state x="282" y="149" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.987@0.27.1920.987" timestamp="1587005945488" />
     <state x="90" y="120" width="814" height="435" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587004704828">
       <screen x="0" y="27" width="994" height="620" />
     </state>
