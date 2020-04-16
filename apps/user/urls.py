@@ -1,6 +1,7 @@
 from django.conf.urls import url
 from user import views
-from user.views import RegisterView, ActiveView, LoginView, UserInfoView, UserOrderView, UserSiteView, LogoutView
+from user.views import RegisterView, ActiveView, LoginView, UserInfoView, UserOrderView, UserSiteView, LogoutView, \
+    UpdateInfoView,UpdatePwdView,showUpdatePageView
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
@@ -16,4 +17,8 @@ urlpatterns = [
     url(r'^order/(?P<page>\d+)$', UserOrderView.as_view(), name='order'),  # 用户订单页面
     url(r'^site$', UserSiteView.as_view(), name='site'),  # 用户地址页面
     url(r'^logout$', LogoutView.as_view(), name='logout'),  # 退出登录
+    url(r'^updateInfo$', UpdateInfoView.as_view(), name='updateInfo'),  # 提交修改密码请求
+    url(r'^showUpdatePage/(?P<token>.*)$', showUpdatePageView.as_view(), name='showUpdatePage'),  # 提交修改密码请求
+    url(r'^updatePwd$', UpdatePwdView.as_view(), name='updatePwd'),  # 提交修改密码请求
+
 ]

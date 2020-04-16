@@ -7,12 +7,12 @@ from django.core.mail import send_mail
 
 from dailyfresh import settings
 
-
 from django.template import loader, RequestContext
 
 # django环境的初始化
 import os
 import django
+
 # 在任务处理者一端加这几句
 # 指定读取配置文件
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dailyfresh.settings')
@@ -44,8 +44,28 @@ def send_register_active_email(to_email, username, token):
     sender = settings.DEFAULT_EMAIL_FORM
     # 收件人列表
     receiver = [to_email]
-    html_msg = '<h1>%s,欢迎您成为天天生鲜注册会员</h1>请点击下面链接激活您的账户<br/><a href="http:192.168.1.13:8000/user/active/%s">http:192.168.1.13:8000/user/active/%s</a>' % (
-        username, token, token)
+    html_msg = '<h1>%s,欢迎您成为天天生鲜注册会员</h1>请点击下面链接激活您的账户<br/><a href="%s/user/active/%s">%s/user/active/%s</a>' % (
+        username, settings.REGISTER_IP, token, settings.REGISTER_IP, token)
+    send_mail(subject, message, sender, receiver, fail_silently=False, html_message=html_msg)
+
+
+# 定义任务函数
+@app.task
+def send_update_password_email(to_email, username, token):
+    '''发送激活邮件'''
+    # 组织邮件信息
+    # 发邮件
+    # 主题信息
+    subject = '天天生鲜欢迎信息'
+    # 邮件正文
+    # message = '<h1>%s,欢迎您成为天天生鲜注册会员</h1>请点击下面链接激活您的账户<br/><a href="http:192.168.1.13:8000/user/active/%s">http:192.168.1.13:8000/user/active/%s</a>' % (username, token, token)
+    message = ''
+    # 发件人
+    sender = settings.DEFAULT_EMAIL_FORM
+    # 收件人列表
+    receiver = [to_email]
+    html_msg = '<h1>%s,欢迎您</h1>请点击下面链接修改您的账户密码<br/><a href="%s/user/showUpdatePage/%s">%s/user/showUpdatePage/%s</a>' % (
+        username, settings.REGISTER_IP, token, settings.REGISTER_IP, token)
     send_mail(subject, message, sender, receiver, fail_silently=False, html_message=html_msg)
 
 

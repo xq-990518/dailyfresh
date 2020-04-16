@@ -170,7 +170,7 @@ EMAIL_USE_SSL = False  # 是否使用SSL加密，qq企业邮箱要求使用
 # 发送邮件的邮箱
 EMAIL_HOST_USER = '1141021298@qq.com'  # 发送邮件的邮箱地址
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'owopuhjtbysriegf'  # 发送邮件的邮箱密码(这里使用的是授权码)
+EMAIL_HOST_PASSWORD = 'piyasvxoimkpjhjj'  # 发送邮件的邮箱密码(这里使用的是授权码)
 # 收件人看到的发件人
 DEFAULT_EMAIL_FORM = '天天生鲜<1141021298@qq.com>'
 
@@ -183,8 +183,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 # 设置Django的文件存储类
 DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
 
+REGISTER_IP = 'http://192.168.124.14'
 # nginx服务器IP地址
-SERVER_IP = 'http://192.168.0.106'
+SERVER_IP = 'http://192.168.124.13'
 # Fdfs存储参数 客户端配置文件同服务器端，服务器地址
 CUSTOM_STORAGE_OPTIONS = {
     # FDFS系统配置文件

@@ -1,6 +1,6 @@
-# dailyfresh
-天天生鲜项目
-
+# dailyfresh(天天生鲜项目)
+### author: 小丑(clown)
+### date:2020-04-09
 1.修改配置文件settings
  * redis
  * databases
@@ -52,3 +52,15 @@ Serializable(可串行化)
 在配置文件中加：
 transaction-isolocation = READ-COMMITTED
 Django2.0之后会默认更改
+
+## 注意
+ 1. 如果机器IP变更,请更改setting中ip,以及redis,fastDFS的 storage-trackered 以及client的ip和 celery的ip,mysql的ip
+修改ip
+* settings 
+* --redis--不需改
+* storage
+* tracker
+* client
+* celery
+* mysql
+* /etc/fdfs/mod_fastdfs.conf

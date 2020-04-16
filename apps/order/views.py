@@ -117,8 +117,6 @@ class OrderBuyPlaceView(LoginRequiredMixin, ListView):
         sku.amount = amount
         # 追加
         skus.append(sku)
-        # 累加计算商品的总件数和总价格
-        total_count += count
         total_price += amount
 
         # 运费:实际开发的时候,属于一个子系统
