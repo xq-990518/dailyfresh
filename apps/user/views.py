@@ -186,7 +186,7 @@ class UpdateInfoView(ListView):
         if allow != 'on':
             return render(request, 'user/user_update.html', {'errmsg': '请同意协议'})
 
-        # 校验用户是否重复
+        # 校验用户是否存在
         try:
             user = User.objects.get(username=username, email=email)
         except User.DoesNotExist:
@@ -198,7 +198,7 @@ class UpdateInfoView(ListView):
             return render(request, 'user/user_update.html', {'errmsg': '该用户不存在'})
 
         # 进行业务处理
-        # 发送激活邮件,包含激活链接: http://192.168.1.13:8000/user/updatePwd?user_id=user.id
+        # 发送激活邮件,包含激活链接: http://ip:port/user/updatePwd?user_id=user.id
         # 激活链接中需要包含用户的身份信息,并且要把身份信息进行加密
         # 加密用户的身份信息,生成激活的token
         # 设置加密的SECRET_KEY,以及过期时间1小时
