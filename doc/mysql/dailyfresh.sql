@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : ubuntu_106
+ Source Server         : ubuntu_14
  Source Server Type    : MySQL
  Source Server Version : 80019
- Source Host           : 192.168.0.106:3306
+ Source Host           : 192.168.124.14:3306
  Source Schema         : dailyfresh
 
  Target Server Type    : MySQL
  Target Server Version : 80019
  File Encoding         : 65001
 
- Date: 06/04/2020 12:24:07
+ Date: 21/04/2020 15:14:16
 */
 
 SET NAMES utf8mb4;
@@ -158,7 +158,8 @@ CREATE TABLE `df_address`  (
 -- ----------------------------
 INSERT INTO `df_address` VALUES (4, '2020-04-04 05:06:47.164454', '2020-04-04 05:06:47.164485', 0, '薛庆', '宿州', '234000', '17356126331', 1, 45);
 INSERT INTO `df_address` VALUES (5, '2020-04-04 05:38:37.672564', '2020-04-04 05:38:37.672596', 0, '小丑', '宿州', '234000', '17356126331', 0, 45);
-INSERT INTO `df_address` VALUES (6, '2020-04-04 11:34:17.925639', '2020-04-04 11:34:17.925679', 0, 'xxx', '1231', '1231', '17356126331', 1, 1);
+INSERT INTO `df_address` VALUES (6, '2020-04-04 11:34:17.925639', '2020-04-04 11:34:17.925679', 0, '薛庆', '淮北职业技术学院', '234000', '17356126331', 1, 1);
+INSERT INTO `df_address` VALUES (7, '2020-04-08 03:18:38.993714', '2020-04-08 03:18:38.993749', 0, '薛庆', '宿州', '234000', '17356126331', 1, 46);
 
 -- ----------------------------
 -- Table structure for df_goods
@@ -172,7 +173,7 @@ CREATE TABLE `df_goods`  (
   `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `detail` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of df_goods
@@ -236,7 +237,7 @@ CREATE TABLE `df_goods_sku`  (
 -- ----------------------------
 -- Records of df_goods_sku
 -- ----------------------------
-INSERT INTO `df_goods_sku` VALUES (1, '2020-03-13 03:12:28.684462', '2020-04-04 08:18:48.677039', 0, '大兴大棚草莓', '草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。', 16.80, '500', 'group1/M00/00/00/wKgAal5q-hyAFOEUAADhpefAOjE5668125', 1990, 27, 1, 1, 2);
+INSERT INTO `df_goods_sku` VALUES (1, '2020-03-13 03:12:28.684462', '2020-04-04 08:18:48.677039', 0, '大兴大棚草莓', '草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。', 16.80, '500', 'group1/M00/00/00/wKgAal5q-hyAFOEUAADhpefAOjE5668125', 1989, 28, 1, 1, 2);
 INSERT INTO `df_goods_sku` VALUES (2, '2020-03-13 03:40:09.597211', '2020-04-04 08:20:15.037648', 0, '芒果', '新鲜芒果', 15.50, '500', 'group1/M00/00/00/wKgAal5rAJmAL0LaAAAgbegSiQE3397483', 1987, 13, 1, 2, 2);
 INSERT INTO `df_goods_sku` VALUES (3, '2020-03-13 03:41:28.484225', '2020-03-31 07:51:37.092493', 0, '青海大虾', '一种生活在水中的节肢动物，属节肢动物甲壳类，种类很多，包括南极红虾、青虾、河虾、草虾、对虾、明虾、龙虾等。', 38.00, '500', 'group1/M00/00/00/wKgAal6C9nOAffN0AAAk0Pq7CMk0350299', 2000, 0, 1, 3, 3);
 INSERT INTO `df_goods_sku` VALUES (4, '2020-03-13 03:42:44.006679', '2020-03-13 03:42:44.006711', 0, '澳洲龙虾', '新鲜澳洲龙虾', 500.00, '500', 'group1/M00/00/00/wKgAal5rATSAdSMeAAA5OYGDqQg0287386', 1999, 1, 1, 4, 3);
@@ -316,8 +317,8 @@ CREATE TABLE `df_index_promotion`  (
 -- ----------------------------
 -- Records of df_index_promotion
 -- ----------------------------
-INSERT INTO `df_index_promotion` VALUES (1, '2020-03-13 03:31:28.649204', '2020-03-13 03:31:28.649235', 0, '吃货暑期趴', '#', 'group1/M00/00/00/wKgAal5q_pCAH7B0AAA2pPk7JKw4402037', 0);
-INSERT INTO `df_index_promotion` VALUES (2, '2020-03-13 03:33:35.218047', '2020-03-13 03:33:35.218094', 0, '盛夏尝鲜季', '#', 'group1/M00/00/00/wKgAal5q_w-AEUNLAAA9865qtF44171083', 1);
+INSERT INTO `df_index_promotion` VALUES (1, '2020-03-13 03:31:28.649204', '2020-04-06 08:04:22.654143', 0, '吃货暑期趴', '#', 'group1/M00/00/00/wKgAal5q_pCAH7B0AAA2pPk7JKw4402037', 1);
+INSERT INTO `df_index_promotion` VALUES (2, '2020-03-13 03:33:35.218047', '2020-04-06 08:54:48.374394', 0, '盛夏尝鲜季', '#', 'group1/M00/00/00/wKgAal5q_w-AEUNLAAA9865qtF44171083', 0);
 
 -- ----------------------------
 -- Table structure for df_index_type_goods
@@ -392,13 +393,14 @@ CREATE TABLE `df_order_goods`  (
   INDEX `df_order_goods_sku_id_b7d6e04e_fk_df_goods_sku_id`(`sku_id`) USING BTREE,
   CONSTRAINT `df_order_goods_order_id_6958ee23_fk_df_order_info_order_id` FOREIGN KEY (`order_id`) REFERENCES `df_order_info` (`order_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `df_order_goods_sku_id_b7d6e04e_fk_df_goods_sku_id` FOREIGN KEY (`sku_id`) REFERENCES `df_goods_sku` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of df_order_goods
 -- ----------------------------
 INSERT INTO `df_order_goods` VALUES (1, '2020-04-05 13:22:44.823963', '2020-04-05 15:52:33.626699', 0, 1, 20.00, '非常好吃', '202004052122441', 5);
 INSERT INTO `df_order_goods` VALUES (2, '2020-04-06 03:51:01.265015', '2020-04-06 03:51:01.265046', 0, 1, 15.50, '', '202004061151011', 2);
+INSERT INTO `df_order_goods` VALUES (3, '2020-04-17 13:18:14.455957', '2020-04-17 13:43:56.826128', 0, 1, 16.80, '好吃', '202004172118141', 1);
 
 -- ----------------------------
 -- Table structure for df_order_info
@@ -428,7 +430,8 @@ CREATE TABLE `df_order_info`  (
 -- Records of df_order_info
 -- ----------------------------
 INSERT INTO `df_order_info` VALUES ('2020-04-05 13:22:44.809639', '2020-04-05 15:52:33.640725', 0, '202004052122441', 3, 1, 20.00, 10.00, 5, '', 6, 1);
-INSERT INTO `df_order_info` VALUES ('2020-04-06 03:51:01.222774', '2020-04-06 03:51:01.272387', 0, '202004061151011', 3, 1, 15.50, 10.00, 1, '', 6, 1);
+INSERT INTO `df_order_info` VALUES ('2020-04-06 03:51:01.222774', '2020-04-17 13:34:12.504922', 0, '202004061151011', 3, 1, 15.50, 10.00, 4, '', 6, 1);
+INSERT INTO `df_order_info` VALUES ('2020-04-17 13:18:14.442964', '2020-04-17 13:43:56.831488', 0, '202004172118141', 3, 1, 16.80, 10.00, 5, '', 6, 1);
 
 -- ----------------------------
 -- Table structure for df_user
@@ -451,13 +454,16 @@ CREATE TABLE `df_user`  (
   `is_delete` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `username`(`username`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 46 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 48 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of df_user
 -- ----------------------------
-INSERT INTO `df_user` VALUES (1, 'pbkdf2_sha256$180000$Nexc9lOR6LY3$3pDK+o1EExmBDuxkjG02qcNP7+c7AF6v1j2FWqR5ARM=', '2020-04-05 12:34:12.456396', 0, 'clown', '', '', '1141021298@qq.com', 0, 1, '2020-01-07 16:02:30.233504', '2020-01-07 16:02:30.471041', '2020-01-07 16:02:30.471055', 0);
-INSERT INTO `df_user` VALUES (45, 'pbkdf2_sha256$180000$i4BbqCRGLhT9$9UYLRK4MCgIixFc35aEtnR/tQ6GSMpbQU9K4xLymfNI=', '2020-04-04 11:31:33.671922', 1, 'xq', '', '', '1141021298@qq.com', 1, 1, '2020-03-10 07:51:32.758455', '2020-03-10 07:51:32.869468', '2020-03-10 07:51:32.869482', 0);
+INSERT INTO `df_user` VALUES (1, 'pbkdf2_sha256$180000$Nexc9lOR6LY3$3pDK+o1EExmBDuxkjG02qcNP7+c7AF6v1j2FWqR5ARM=', '2020-04-17 13:16:18.089685', 0, 'clown', '', '', '1141021298@qq.com', 0, 1, '2020-01-07 16:02:30.233504', '2020-01-07 16:02:30.471041', '2020-01-07 16:02:30.471055', 0);
+INSERT INTO `df_user` VALUES (45, 'pbkdf2_sha256$180000$i4BbqCRGLhT9$9UYLRK4MCgIixFc35aEtnR/tQ6GSMpbQU9K4xLymfNI=', '2020-04-16 15:23:57.064171', 1, 'xq', '', '', '1141021298@qq.com', 1, 1, '2020-03-10 07:51:32.758455', '2020-03-10 07:51:32.869468', '2020-03-10 07:51:32.869482', 0);
+INSERT INTO `df_user` VALUES (46, 'pbkdf2_sha256$180000$1HVV87Gkm7aC$3ae0/mddGQad0EfFoniQenj5jhYxz5wj35sgVKEaROA=', '2020-04-14 14:23:34.742231', 1, 'admin', '', '', '1141021298@qq.com', 1, 1, '2020-04-06 12:00:08.755414', '2020-04-06 12:00:08.878402', '2020-04-06 12:00:08.878415', 0);
+INSERT INTO `df_user` VALUES (47, 'pbkdf2_sha256$180000$Ushzc9uZCP7K$n1IgDeyjIsNhS9sD8YyTKq8HiiMMg567664YSrcXICI=', '2020-04-08 05:52:32.608005', 0, 'test_1', '', '', '472517841@qq.com', 0, 1, '2020-04-08 04:46:08.972127', '2020-04-08 04:46:09.195164', '2020-04-08 05:52:15.495969', 0);
+INSERT INTO `df_user` VALUES (48, 'pbkdf2_sha256$180000$OtKiUInwDCHM$tDRGLeVviP/h7ji1lGFKjmF3PJ8ZLLObQWgvuQStFTs=', '2020-04-16 13:48:05.946961', 0, 'test-test', '', '', '472517841@qq.com', 0, 1, '2020-04-16 13:47:31.517734', '2020-04-16 13:47:31.622980', '2020-04-16 13:47:58.194271', 0);
 
 -- ----------------------------
 -- Table structure for df_user_groups
@@ -472,7 +478,7 @@ CREATE TABLE `df_user_groups`  (
   INDEX `df_user_groups_group_id_36f24e94_fk_auth_group_id`(`group_id`) USING BTREE,
   CONSTRAINT `df_user_groups_group_id_36f24e94_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `df_user_groups_user_id_a816b098_fk_df_user_id` FOREIGN KEY (`user_id`) REFERENCES `df_user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of df_user_groups
@@ -491,7 +497,7 @@ CREATE TABLE `df_user_user_permissions`  (
   INDEX `df_user_user_permiss_permission_id_40a6cb2d_fk_auth_perm`(`permission_id`) USING BTREE,
   CONSTRAINT `df_user_user_permiss_permission_id_40a6cb2d_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `df_user_user_permissions_user_id_b5f6551b_fk_df_user_id` FOREIGN KEY (`user_id`) REFERENCES `df_user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of df_user_user_permissions
@@ -515,7 +521,7 @@ CREATE TABLE `django_admin_log`  (
   INDEX `django_admin_log_user_id_c564eba6_fk_df_user_id`(`user_id`) USING BTREE,
   CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `django_admin_log_user_id_c564eba6_fk_df_user_id` FOREIGN KEY (`user_id`) REFERENCES `df_user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 81 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 89 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of django_admin_log
@@ -601,6 +607,14 @@ INSERT INTO `django_admin_log` VALUES (78, '2020-03-31 08:20:12.765852', '28', '
 INSERT INTO `django_admin_log` VALUES (79, '2020-03-31 08:20:22.144750', '29', 'IndexTypeGoodsBanner object (29)', 1, '[{\"added\": {}}]', 12, 45);
 INSERT INTO `django_admin_log` VALUES (80, '2020-03-31 08:20:28.796990', '30', 'IndexTypeGoodsBanner object (30)', 1, '[{\"added\": {}}]', 12, 45);
 INSERT INTO `django_admin_log` VALUES (81, '2020-04-01 09:31:17.223780', '7', 'GoodsSKU object (7)', 2, '[{\"changed\": {\"fields\": [\"\\u5546\\u54c1\\u56fe\\u7247\"]}}]', 9, 45);
+INSERT INTO `django_admin_log` VALUES (82, '2020-04-06 08:04:18.935446', '2', 'IndexPromotionBanner object (2)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
+INSERT INTO `django_admin_log` VALUES (83, '2020-04-06 08:04:22.662293', '1', 'IndexPromotionBanner object (1)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
+INSERT INTO `django_admin_log` VALUES (84, '2020-04-06 08:06:57.135867', '2', 'IndexPromotionBanner object (2)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
+INSERT INTO `django_admin_log` VALUES (85, '2020-04-06 08:44:23.738000', '2', 'IndexPromotionBanner object (2)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
+INSERT INTO `django_admin_log` VALUES (86, '2020-04-06 08:46:29.043570', '2', 'IndexPromotionBanner object (2)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
+INSERT INTO `django_admin_log` VALUES (87, '2020-04-06 08:50:00.504363', '2', 'IndexPromotionBanner object (2)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
+INSERT INTO `django_admin_log` VALUES (88, '2020-04-06 08:54:11.820935', '2', 'IndexPromotionBanner object (2)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
+INSERT INTO `django_admin_log` VALUES (89, '2020-04-06 08:54:48.390283', '2', 'IndexPromotionBanner object (2)', 2, '[{\"changed\": {\"fields\": [\"\\u5c55\\u793a\\u987a\\u5e8f\"]}}]', 11, 45);
 
 -- ----------------------------
 -- Table structure for django_content_type
@@ -644,7 +658,7 @@ CREATE TABLE `django_migrations`  (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `applied` datetime(6) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 26 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 25 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of django_migrations

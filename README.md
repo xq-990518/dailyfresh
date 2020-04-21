@@ -1,6 +1,8 @@
 # dailyfresh(天天生鲜项目)
 ### author: 小丑(clown)
 ### date:2020-04-09
+### 系统开发环境：ubuntu
+
 1.修改配置文件settings
  * redis
  * databases

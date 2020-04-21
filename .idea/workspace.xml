@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/fdfs/client.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/fdfs/mod_fastdfs.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/fdfs/storage.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/fdfs/tracker.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/redis/redis.conf" afterDir="false" />
+    <list default="true" id="8eee01e1-15d9-4950-b355-c430b1b4fb77" name="Default Changelist" comment="机器IP修改,添加修改IP说明等">
+      <change beforePath="$PROJECT_DIR$/.idea/dailyfresh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dailyfresh.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +67,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/redis" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/install" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -164,6 +162,8 @@
       <workItem from="1586956679014" duration="2265000" />
       <workItem from="1586963954103" duration="2156000" />
       <workItem from="1587000861532" duration="4159000" />
+      <workItem from="1587451814335" duration="31000" />
+      <workItem from="1587451847886" duration="1434000" />
     </task>
     <task id="LOCAL-00001" summary="新增.idea隐藏文件">
       <created>1585718943137</created>
@@ -295,18 +295,20 @@
       <screen x="0" y="27" width="1151" height="706" />
     </state>
     <state x="170" y="41" width="800" height="684" key="#Notifications/0.27.1151.706@0.27.1151.706" timestamp="1585731361303" />
-    <state x="237" y="88" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583805837856">
-      <screen x="0" y="27" width="1285" height="800" />
+    <state x="283" y="64" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587451840020">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="283" y="64" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1587451840020" />
     <state x="237" y="88" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805837856" />
     <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586084304799">
       <screen x="0" y="27" width="1100" height="668" />
     </state>
     <state x="249" y="169" width="691" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1100.668@0.27.1100.668" timestamp="1586084304799" />
     <state x="261" y="177" width="722" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1151.706@0.27.1151.706" timestamp="1585717202749" />
-    <state x="230" y="27" width="867" height="842" key="CommitChangelistDialog2" timestamp="1587005932672">
-      <screen x="0" y="27" width="1920" height="987" />
+    <state x="184" y="0" width="867" height="842" key="CommitChangelistDialog2" timestamp="1587455126729">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="184" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587455126729" />
     <state x="131" y="27" width="867" height="664" key="CommitChangelistDialog2/0.27.1096.664@0.27.1096.664" timestamp="1586164587650" />
     <state x="131" y="27" width="867" height="668" key="CommitChangelistDialog2/0.27.1100.668@0.27.1100.668" timestamp="1586104652287" />
     <state x="137" y="27" width="867" height="706" key="CommitChangelistDialog2/0.27.1151.706@0.27.1151.706" timestamp="1585746691260" />
@@ -383,9 +385,10 @@
     <state x="359" y="88" width="422" height="591" key="RollbackChangesDialog/0.27.1151.706@0.27.1151.706" timestamp="1585735800688" />
     <state x="599" y="97" key="RollbackChangesDialog/0.27.1918.807@0.27.1918.807" timestamp="1586919909070" />
     <state x="310" y="81" width="271" height="455" key="RollbackChangesDialog/0.27.994.620@0.27.994.620" timestamp="1587004409975" />
-    <state x="110" y="27" width="1793" height="987" key="SettingsEditor" timestamp="1586142930496">
-      <screen x="0" y="27" width="1920" height="987" />
+    <state x="88" y="0" width="1793" height="987" key="SettingsEditor" timestamp="1587451878772">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="88" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587451878772" />
     <state x="103" y="27" width="900" height="670" key="SettingsEditor/0.27.1060.670@0.27.1060.670" timestamp="1583839457041" />
     <state x="103" y="27" width="900" height="674" key="SettingsEditor/0.27.1064.674@0.27.1064.674" timestamp="1583823012292" />
     <state x="63" y="27" width="1027" height="668" key="SettingsEditor/0.27.1100.668@0.27.1100.668" timestamp="1585985118795" />
@@ -411,13 +414,11 @@
     </state>
     <state x="270" y="165" key="com.intellij.ide.util.TipDialog/0.27.1021.652@0.27.1021.652" timestamp="1579004000505" />
     <state x="272" y="164" key="com.intellij.ide.util.TipDialog/0.27.1029.639@0.27.1029.639" timestamp="1579243280314" />
-    <state x="320" y="157" key="com.intellij.ide.util.TipDialog/0.27.1064.616@0.27.1064.616" timestamp="1578739338814" />
     <state x="282" y="172" key="com.intellij.ide.util.TipDialog/0.27.1064.674@0.27.1064.674" timestamp="1583822889559" />
     <state x="292" y="171" key="com.intellij.ide.util.TipDialog/0.27.1100.668@0.27.1100.668" timestamp="1585797878975" />
     <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.27.1285.800@0.27.1285.800" timestamp="1583805668201" />
     <state x="508" y="239" key="com.intellij.ide.util.TipDialog/0.27.1920.987@0.27.1920.987" timestamp="1586963954063" />
     <state x="249" y="159" key="com.intellij.ide.util.TipDialog/0.27.940.624@0.27.940.624" timestamp="1578813478984" />
-    <state x="146" y="156" key="com.intellij.ide.util.TipDialog/0.27.983.604@0.27.983.604" timestamp="1578404873312" />
     <state x="261" y="154" key="com.intellij.ide.util.TipDialog/0.27.987.600@0.27.987.600" timestamp="1578913061089" />
     <state x="263" y="160" key="com.intellij.ide.util.TipDialog/0.27.994.620@0.27.994.620" timestamp="1587000912022" />
     <state x="409" y="27" width="700" height="706" key="find.popup" timestamp="1585743723982">
@@ -426,14 +427,14 @@
     <state x="409" y="27" width="700" height="706" key="find.popup/0.27.1151.706@0.27.1151.706" timestamp="1585743723982" />
     <state x="0" y="27" width="700" height="682" key="find.popup/0.27.1221.682@0.27.1221.682" timestamp="1580125853827" />
     <state x="683" y="27" width="1101" height="987" key="find.popup/0.27.1920.987@0.27.1920.987" timestamp="1583829848202" />
-    <state x="236" y="160" width="668" height="453" key="git4idea.merge.GitPullDialog" timestamp="1585723924818">
-      <screen x="0" y="27" width="1151" height="706" />
+    <state x="315" y="157" width="668" height="453" key="git4idea.merge.GitPullDialog" timestamp="1587453078933">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="315" y="157" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1587453078933" />
     <state x="236" y="160" width="668" height="453" key="git4idea.merge.GitPullDialog/0.27.1151.706@0.27.1151.706" timestamp="1585723924818" />
     <state x="366" y="27" width="1185" height="985" key="search.everywhere.popup" timestamp="1586177519929">
       <screen x="0" y="27" width="1920" height="987" />
     </state>
-    <state x="209" y="26" width="672" height="678" key="search.everywhere.popup/0.27.1093.630@0.27.1093.630" timestamp="1578413685575" />
     <state x="209" y="26" width="676" height="716" key="search.everywhere.popup/0.27.1096.664@0.27.1096.664" timestamp="1586147701041" />
     <state x="220" y="26" width="709" height="761" key="search.everywhere.popup/0.27.1151.706@0.27.1151.706" timestamp="1585712656254" />
     <state x="233" y="26" width="749" height="730" key="search.everywhere.popup/0.27.1217.678@0.27.1217.678" timestamp="1580125915671" />
