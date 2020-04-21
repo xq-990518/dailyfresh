@@ -66,3 +66,5 @@ Django2.0之后会默认更改
 * celery
 * mysql
 * /etc/fdfs/mod_fastdfs.conf
+
+2. 如果单机器环境启动，建议启动端口为nginx中配置端口，配合nginx端口实现静态文件访问，
