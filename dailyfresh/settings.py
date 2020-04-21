@@ -183,9 +183,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 # 设置Django的文件存储类
 DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
 
-REGISTER_IP = 'http://192.168.124.14'
+REGISTER_IP = 'http://192.168.124.15'
 # nginx服务器IP地址
-SERVER_IP = 'http://192.168.124.13'
+SERVER_IP = 'http://192.168.124.14'
 # Fdfs存储参数 客户端配置文件同服务器端，服务器地址
 CUSTOM_STORAGE_OPTIONS = {
     # FDFS系统配置文件
